@@ -1,0 +1,337 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:  #edeff3;
+}
+.searchsection{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    background-color: transparent;
+    text-align: center;
+}
+.searchsection-child{
+    padding: 30px;
+    max-width: 500px;
+    height: 600px;
+}
+.searchsection-child-p{
+    padding-top: 100px;
+    font-weight: 500;
+    font-size: 20px;
+    color: #2658BE;
+    margin-bottom: 13px;
+}
+.searchsection-child h2{
+    color: black;
+    font-size: 50px;
+    margin-bottom: 12px;
+}
+.searchsection-child span{
+    color: #2658BE;
+}
+.searchbox{
+    box-sizing: border-box;
+    display: flex;
+    background-color: #E0E3E5;
+    height: 75px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease-in-out;
+}
+.searchbox input{
+    background-color: transparent;
+    flex: 1;
+    height: inherit;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+}
+.searchbox:focus-within{
+    background-color: white;
+}
+.searchbox p{
+    padding: 7px;
+}
+.searchbox button{
+    padding: 16px 38px;
+    margin-right: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    background-color: #2658BE;
+    color: white;
+}
+
+/* The Swiss Alps section */
+
+.The-Swiss-Alps-section{
+    height: fit-content;
+}
+.The-Swiss-Alps-parent{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 30px;
+    gap: 30px;
+}
+.The-Swiss-Alps-child:first-child{
+    margin-bottom: 30px;
+    background-image: url(image/landscape\ 2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 350px;
+    border-radius: 40px;
+    min-width: 300px;
+    flex: 1;
+    padding: 20px;
+    color: white;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+}
+.The-Swiss-Alps-child:first-child:hover{
+    background-size: 120%;
+}
+.The-Swiss-Alps-child1-child{
+    margin-top: auto;
+    width: 350px;
+}
+.The-Swiss-Alps-child1-child h5{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 11px;
+}
+.The-Swiss-Alps-child1-child h2{
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 11px;
+}
+.The-Swiss-Alps-child1-child p{
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 11px;
+}
+.The-Swiss-Alps-child:last-child{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.The-Swiss-Alps-card{
+    background-color: white;
+    height: 150px;
+    border-radius: 50px;
+    text-align: center;
+    max-width: 400px;
+    padding: 25px;
+}
+.earthicon{
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(158, 27%, 92%);
+    display: inline-block;
+    height: 41px;
+    width: 41px;
+    margin-top: 17px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    font-size: 25px;
+}
+#earthicon{
+    transform: translatey(5px);
+}
+.earth-no{
+    font-weight: 700;
+    font-size: 27px;
+    margin-bottom: 2px;
+}
+.nation-curated{
+    font-weight: 300;
+    font-size: 21px;
+    margin-bottom: 5px;
+    color: #4a4c4d;
+}
+.The-Swiss-Alps-card:last-child{
+    background-color: blue;
+    color: white;
+    text-align: left;
+    box-sizing: border-box;
+    padding: 30px;
+    cursor: pointer;
+
+}
+.Surprise-Me{
+    font-size: 21px;
+    font-weight: 500;
+    margin-top: 1px;
+    margin-bottom: 5px;
+}
+.Surprise-Me-bio{
+    color: hsl(233, 26%, 81%);
+}
+.section-3{
+    height: fit-content;
+    padding-top: 3px;
+    padding-bottom: 200px;
+}
+.section-3-container{
+    display: flex;
+    gap: 35px;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+.section-3-card{
+    display: block;
+    background-color: white;
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    height: 300px;
+    border-radius: 35px;
+    padding: 15px;
+}
+.nature-view{
+    margin: 14px;
+    border-radius: 30px;
+    height: 150px;
+    background-image: url(image/landscape\ 4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nature-view{
+    background-image: url(image/landscape\ picture.jpg);
+}
+.region-name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+.region-bio{
+    color: rgba(0, 0, 0, 0.76);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.region-link{
+    color: blue;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+.section-3-card1{
+    display: flex;
+    background-color: rgb(212, 205, 205);
+    flex: 1;
+    height: 300px;
+    border-radius: 30px;
+    padding: 15px;
+    min-width: 300px;
+    justify-content: space-between;
+}
+.section-3-card-child:first-child{
+    width: 300px;
+    padding: 15px;
+}
+.compare-tool{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 14px;
+    margin-top: 50px;
+}
+.compare-bio{
+    color: rgba(0, 0, 0, 0.658);
+    font-size: 17px;
+    font-weight: 400;
+}
+.section-3-card-child:first-child button{
+    background-color: white;
+    margin-top: 30px;
+    width: 130px;
+    height: 40px;
+    border: none;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.678);
+    transition: all 0.1s ease-in-out;
+}
+.section-3-card-child:first-child button:hover{
+    background-color: #E0E3E5;
+}
+.section-3-card-child{
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* for tablet view  */
+@media screen and (max-width: 830px){
+    .The-Swiss-Alps-card{
+        align-items: center;
+        justify-content: center;
+        min-width: none;
+        max-width: 1000px;
+    }
+    .section-3-card{
+        align-items: center;
+        justify-content: center;
+        min-width: none;
+        max-width: 1000px;
+    }
+}
+
+/* for mobile view (large size)  */
+@media screen and (max-width: 483px){
+    .searchsection-child{
+        padding: 15px;
+        max-width: 400px;
+        height: 400px;
+    }
+    .searchbox input{
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+
+/* for mobile view (medium size)  */
+@media screen and (max-width: 377px){
+    .searchsection-child-p{
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .searchsection-child h2{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .searchbox{
+        height: 55px;
+        border-radius: 25px;
+    }
+    .searchbox button{
+        padding: 8px 24px;
+    }
+    .The-Swiss-Alps-child1-child p{
+    font-size: 17px;
+    margin-bottom: 9px;
+    }
+    .The-Swiss-Alps-child1-child h2{
+    font-weight: 600;
+    font-size: 32px;
+    margin-bottom: 9px;
+    }
+    .The-Swiss-Alps-child1-child h5{
+    font-size: 17px;
+    margin-bottom: 9px;
+    }
+    .Surprise-Me-bio{
+        font-size: 15px;
+        line-height: 1;
+    }
+}
