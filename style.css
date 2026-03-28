@@ -164,7 +164,6 @@ body{
     box-sizing: border-box;
     padding: 30px;
     cursor: pointer;
-
 }
 .Surprise-Me{
     font-size: 21px;
@@ -195,6 +194,7 @@ body{
     height: 300px;
     border-radius: 35px;
     padding: 15px;
+    transition: all 0.5s ease-in-out;
 }
 .nature-view{
     margin: 14px;
@@ -265,11 +265,22 @@ body{
 .section-3-card-child:first-child button:hover{
     background-color: #E0E3E5;
 }
-.section-3-card-child{
-    align-items: center;
-    justify-content: center;
+#trending_up1:hover #trending_up{
+    color: green;
 }
-
+#trending_up{
+    transition: all 0.1s ease-in-out;
+    margin-top: 87px;
+    transform: translatex(-20px);
+    font-size: 7rem;
+    color: rgb(136, 160, 136);
+}
+#trendingup{
+    transform: translatey(8px) translatex(3px);
+}
+.section-3-card:hover #trendingup{
+    transform: translatex(9px);
+}
 
 /* for tablet view  */
 @media screen and (max-width: 830px){

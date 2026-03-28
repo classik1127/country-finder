@@ -17,8 +17,8 @@
             <h2>Explore the  <span>Global Tapestry</span></h2>
             <div class="searchbox">
                 <p><span class="material-symbols-outlined">search</span></p>
-                <input type="search" placeholder="Enter country name...">
-                <button>search</button>
+                <input autocomplete="off" id="input" type="search" placeholder="Enter country name...">
+                <button onclick="searchcountry()">search</button>
             </div>
         </div>
     </section>
@@ -52,26 +52,31 @@
                 <div class="nature-view"></div>
                 <p class="region-name">Oceania</p>
                 <p class="region-bio">Explore the island nations and coral reefs of the Pacific.</p>
-                <p class="region-link">View Region</p>
+                <p class="region-link">View Region<span id="trendingup" class="material-symbols-outlined">trending_up</span></p>
             </div>
             <div class="section-3-card">
                 <div class="nature-view" id="nature-view"></div>
                 <p class="region-name">Europe</p>
                 <p class="region-bio">Explore the island nations and coral reefs of the Pacific.</p>
-                <p class="region-link">View Region</p>
+                <p class="region-link">View Region<span id="trendingup" class="material-symbols-outlined">trending_up</span></p>
             </div>
-             <div class="section-3-card1">
+             <div id="trending_up1" class="section-3-card1">
                 <div class="section-3-card-child">
                     <p class="compare-tool">New Comparison Tool</p>
                     <p class="compare-bio">Side-by-side analysis of GDP, population, and land area.</p>
                     <button>Try Now</button>
                 </div>
-                <div class="section-3-card-child">
-                    <div><span class="material-symbols-outlined">trending_up</span></div>
+                <div  class="section-3-card-child">
+                    <div><span id="trending_up" class="material-symbols-outlined">trending_up</span></div>
                 </div>
             </div>
         </div>
      </section>
+    <div id="navbar"></div>
+
+
+     <script src="navbar.js"></script>
+     <script src="script.js"></script>
     
 </body>
 </html>

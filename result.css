@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color:  #edeff3;
+    align-items: center;
+    justify-content: center;
+}
+#main{
+    display: block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 450px;
+    padding: 20px;
+}
+.earth-div{
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    background-color: hsl(201, 57%, 88%);
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+#main h1{
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+.bio{
+    color: hsla(0, 0%, 0%, 0.719);
+    font-size: 20px;
+}
+.bio span{
+    color: blue;
+    font-weight: 700;
+    font-size: 22px;
+}
+#Suggestion-parent{
+    display: flex;
+}
+.sugestion p{
+    padding-left: 20px;
+    text-align: left;
+    color: hsla(0, 0%, 0%, 0.719);
+    margin-bottom: 20px;
+}
+
+.SuggestedActions button{
+    margin-bottom: 25px;
+    height: 65px;
+    border-radius: 10px;
+    min-width: 200px;
+    width: 600px;
+    padding: 2px;
+    color: hsla(0, 0%, 0%, 0.801);
+    border: none;
+    background-color: hsl(240, 1%, 86%);
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.1s ease-in-out;
+}
+.SuggestedActions button:hover{
+    background-color: hsl(240, 1%, 77%);
+}
+
+.other-action button{
+    height: 65px;
+    border-radius: 35px;
+    min-width: 200px;
+    width: 600px;
+    padding: 2px;
+    color: hsla(0, 0%, 100%, 0.801);
+    border: none;
+    background-color: hsl(240, 100%, 50%);
+    font-size: 20px;
+    font-weight: 600;
+    border: 2px solid blue;
+    transition: all 0.1s ease-in-out;
+    cursor: pointer;
+}
+.other-action button:hover{
+    background-color: transparent;
+    color: blue;
+}
+.other-action button:last-child{
+    margin-top: 20px !important;
+    background-color: transparent;
+    color: blue;
+}
+.other-action button:last-child:hover{
+    background-color: blue;
+    color: hsla(0, 0%, 100%, 0.801);
+}
+#Icons{
+    transform: translateY(6px) translateX(-5px);
+}
+#icon{
+    transform: scale(2) translateY(17px);
+}
+
+/* for tablet view */
+
+@media screen and (max-width: 1221px){
+
+    #Suggestion-parent{
+        display: flex;
+        flex-direction: column;
+    }
+    .other-action{
+        margin-bottom: 30px;
+    }
+}

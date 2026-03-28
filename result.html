@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>country finder</title>
+    <link rel="stylesheet" href="result.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <center>
+        <div id="main">
+            <div class="earth-div"><span id="icon" class="material-symbols-outlined">public_off</span></div>
+            <h1>Country not found</h1>
+            <p class="bio">Our digital atlas couldn't locate "<span id="resultname"></span>". Perhaps it's hiding between the pages or under a different name?</p>
+        </div>
+    </center>
+    <section>
+        <div class="sugestion">
+            <p>Suggested Actions</p>
+            <div id="Suggestion-parent">
+                <div class="SuggestedActions">
+                    <center>
+                        <button><span id="Icons" class="material-symbols-outlined">spellcheck</span>Check the spelling of the search term</button>
+                        <button><span  id="Icons" class="material-symbols-outlined">travel_explore</span>Try searching by continent (e.g., "Europe")</button>
+                    </center>
+                </div>
+                <div class="other-action">
+                    <center>
+                        <button onclick="switchpage()"><span  id="Icons" class="material-symbols-outlined">home</span>Back to Discover</button> 
+                        <button><span  id="Icons" class="material-symbols-outlined">map</span>Browse the Map</button>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+<script src="navbar.js"></script>
+<script src="result.js"></script>
+</body>
+</html>
