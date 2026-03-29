@@ -142,7 +142,7 @@ body{
 @media screen and (max-width:425px){
 
     body{
-        background-color: bisque;
+        background-color: transparent;
     }
     .other-action button, .SuggestedActions button{
         width: fit-content;

@@ -89,7 +89,7 @@ body{
     background-size: cover;
     height: 350px;
     border-radius: 40px;
-    min-width: 300px;
+    min-width: 150px;
     flex: 1;
     padding: 20px;
     color: white;
@@ -232,7 +232,7 @@ body{
     height: 300px;
     border-radius: 30px;
     padding: 15px;
-    min-width: 300px;
+    min-width: 200px;
     justify-content: space-between;
 }
 .section-3-card-child:first-child{
@@ -346,6 +346,6 @@ body{
         line-height: 1;
     }
     .The-Swiss-Alps-child:first-child{
-        width: fit-content;
+        width: 200px !important;
     }
 }
