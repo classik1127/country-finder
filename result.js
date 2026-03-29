@@ -15,7 +15,7 @@ function switchpage() {
 
 const notfound = document.getElementById("notfound");
 const found = document.getElementById("found");
-            found.style.display = "none";
+            found.style.display = "flex";
 
 fetch("https://restcountries.com/v3.1/name/japan")
     .then(Response => Response.json())
