@@ -11,12 +11,18 @@
 <body>
     <div id="navbar"></div>
 
-    <center>
-        <div id="main">
+    <section id="notfound">
+
+
+    <!-- not found section -->
+    <div>
+        <center>
             <div class="earth-div"><span id="icon" class="material-symbols-outlined">public_off</span></div>
             <h1>Country not found</h1>
-            <p class="bio">Our digital atlas couldn't locate "<span id="resultname"></span>". Perhaps it's hiding between the pages or under a different name?</p>
-        </div>
+            <center>
+                <p class="bio">Our digital atlas couldn't locate "<span id="resultname"></span>". Perhaps it's hiding between the pages or under a different name?</p>
+            </center>
+            </div>
     </center>
     <section>
         <div class="sugestion">
@@ -37,9 +43,112 @@
             </div>
         </div>
     </section>
+    
+</div>
+</section>
+    
+    <!-- found result section -->
 
+    <section id="found">
+        <main class="mainpage">
+            <div id="main">
+            <div class="landscape">
+                <div class="landscapecard">
+                    <img src="image/jpy.png" alt="country flag">
+                    <div class="landscapecard-child">
+                        <p>East Asia</p>
+                        <h2>japan</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="landscape-action-btn">
+            <div class="landscape-action">
+                <h5>Nippon-koku</h5>
+                <p>State of Japan • 日本国</p>
+            </div>
+            <button id="comparebtn">Compare</button>
+            <button>View on Google Maps</button>
+        </div>
+        <div class="landfact">
+            <div class="landfact-child">
+                <p class="landfact-child-p" >capital</p>
+                <p class="capitalname" >Tokyo</p>
+            </div>
+            <div class="landfact-child">
+                <p class="landfact-child-p" >Population</p>
+                <p class="capitalname" >125.8M</p>
+            </div>
+            <div class="landfact-child">
+                <p class="landfact-child-p" >Area</p>
+                <p class="capitalname" >377,975 km²</p>
+            </div>
+            <div class="landfact-child">
+                <p class="landfact-child-p" >Timezone</p>
+                <p class="capitalname" >UTC+09:00</p>
+            </div>
+        </div>
+        <div class="details">
+            <div class="currencies">
+                <p  class="detailsp">Currencies</p>
+                <p class="details2">Japanese Yen (¥)</p>
+            </div>
+            <div class="Languages">
+                <p class="detailsp">Languages</p>
+                <p class="details2">Japanese</p>
+            </div>
+        </div>
+        <div class="Neighbors">
+            <h5>Neighbors</h5>
+            <div class="Neighbor-card">
+                <div class="Neighbors-card">South Korea</div>
+                <div class="Neighbors-card">China</div>
+                <div class="Neighbors-card">Russia</div>
+                <div class="Neighbors-card">Phillipines</div>
+            </div>
+        </div>
+        </main>
+        <aside>
+            <div class="main">
 
-<script src="navbar.js"></script>
-<script src="result.js"></script>
+                <section class="asside-section1">
+                    <h5>Location</h5>
+                    <div class="aside-section1img"></div>
+           </section>
+           <section class="didyouknow-section1">
+               <h5>Did you know?</h5>
+               <div class="diy-fact">
+                   <div class="diy-fact-card">
+                       <p>🪙</p>
+                       <p>Japan consists of 6,852 islands. The four largest are Honshu, Hokkaido, Kyushu, and Shikoku.</p>
+                    </div>
+                    <div class="diy-fact-card">
+                        <p>🪙</p>
+                        <p>It has the world's highest life expectancy and the third-largest economy by nominal GDP.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="Explore-Region">
+                <h5>Explore Region</h5>
+                <div class="Explore-Region-card">
+                    <p>South Korea</p>
+                    <p>></p>
+                </div>
+                <hr>
+                <div class="Explore-Region-card">
+                    <p>South Korea</p>
+                    <p>></p>
+                </div>
+                <hr>
+                <div class="Explore-Region-card">
+                    <p>South Korea</p>
+                    <p>></p>
+                </div>
+            </section>
+        </aside>
+    </section>
+
+    <script src="navbar.js"></script>
+    <script src="result.js"></script>
 </body>
 </html>

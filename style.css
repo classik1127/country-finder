@@ -345,4 +345,7 @@ body{
         font-size: 15px;
         line-height: 1;
     }
+    .The-Swiss-Alps-child:first-child{
+        width: fit-content;
+    }
 }
