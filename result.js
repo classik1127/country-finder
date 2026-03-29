@@ -14,7 +14,7 @@ function switchpage() {
 
 const notfound = document.getElementById("notfound");
 const found = document.getElementById("found");
-            found.style.display = "flex";
+            found.style.display = "block";
 
 
 // for page with result
@@ -25,6 +25,7 @@ const maplink = document.getElementById("maplink");
 const capitalname = document.getElementById("capitalname");
 const Population = document.getElementById("Population");
 const Area = document.getElementById("Area");
+const stats = document.getElementById("stats");
 const Timezone = document.getElementById("Timezone");
 const Languages = document.getElementById("Languages");
 const Currencies = document.getElementById("Currencies");
@@ -44,19 +45,19 @@ let newcon = countrysearch;
             .then(data  => {
                 let datainfo = data[0];
                 console.log(datainfo)
-                console.log(datainfo.currencies)
+                console.log(datainfo.status)
 
                 
                                 countryflag.alt  = datainfo.flags.alt ;
                                 
-                                countryflag.src  = datainfo.flags.png ;
+                                countryflag.src  = datainfo.flags.svg ;
                 continet.textContent = datainfo.continents;
                 countryname.textContent = countrysearch;
                 // maplink.href = maps.googleMaps;
                 capitalname.textContent = datainfo.capital;
                 Population.textContent = datainfo.population;
                 Area.textContent = datainfo.area;
-                Area.textContent = datainfo.area;
+                stats.textContent = datainfo.status;
                 Timezone.textContent = datainfo.timezones[0];
                 // Currencies.textContent = datainfo.Currencies.name;
                 Neighborone.textContent = datainfo.borders[0];

@@ -169,283 +169,176 @@ body{
 
 /* found result section */
 
-#found{
-    padding-top: 60px;
+.top-section{
+    padding-top: 120px;
     display: flex;
-    box-sizing: border-box;
-    padding-left: 20px;
-    padding-right: 20px;
-    gap: 21px;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
-
-#main{
+.top-section-bio{
     flex: 1;
-    background-color: transparent;
-    height: 400px;
-    width: 850px;
-    margin-top: 0px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
 }
-.landscape{
-    margin: 15px;
-    border-radius: 25px 25px 0 0 ;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url(image/landscape\ 2.jpg);
-    background-position: center;
-    min-width: 300px;
-    height: 400px;
-    margin-top: 0px;
-    box-sizing: border-box;
-}
-.landscapecard{
-    height: 90%;
-    padding: 21px;
-    align-items: flex-end;
-    color: white;
-    margin-top: auto;
-    display: flex;
-    gap: 36px;
-}
-.landscapecard img{
-    width: 110px;
-    border-radius: 10px;
-}
-.landscapecard-child h2{
-    font-weight: 700;
-    font-size: 2.5rem;
-}
-.landscapecard-child p{
-    font-weight: 500;
-    font-size: 1.1rem;
-    padding-top: 10px;
-}
-aside{
-    padding-top: 20px;
-}
-
-.asside-section1{
-    height: 400px;
-    width: 400px;
-    padding: 25px;
-    border-radius: 15px;
-    background-color: white;
-    margin-bottom: 20px;
-    box-sizing: border-box;
-}
-.aside-section1img{
-    background-image: url(image/landscape\ 4.jpg);
-    width: 100%;
-    border-radius: 15px;
-    height: 300px;
-}
-.asside-section1 h5{
-    font-size: 17px;
-    margin-bottom: 20px;
-}
-
-.didyouknow-section1{
-    width: 400px;
-    padding: 25px;
-    border-radius: 15px;
-    background-color: hsl(210, 9%, 96%);
-    box-sizing: border-box;
-    margin-bottom: 20px;
-}
-.didyouknow-section1 h5{
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-.diy-fact-card{
-    display: flex;
-    gap: 10px;
+.official-entry{
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(175, 149, 2);
     margin-bottom: 10px;
 }
-.Explore-Region{
-    width: 400px;
-    padding: 25px;
-    border-radius: 15px;
-    background-color: hsl(210, 9%, 96%);
-    box-sizing: border-box;
-    margin-bottom: 20px;
+.top-section-bio h1{
+    font-size: 70px;
 }
-.Explore-Region h5{
-    margin-bottom: 20px;
-    font-size: 20px;
-}
-.Explore-Region-card{
-    display: flex;
-    justify-content: space-between;
-    cursor: pointer;
-    margin: 10px;
-}
-.mainpage{
-    background-color: transparent;
-    height: fit-content;
-    flex: 1;
-    margin-bottom: 90px;
-    margin-top: 30px;
-}
-.landscape-action-btn{
-    padding: 30px;
+.location-card{
     display: flex;
     gap: 20px;
-    padding-left: 60px;
-    max-width: 760px;
-    position: relative;
+    margin-bottom: 35px;
 }
-.landscape-action-btn::before{
-    content: '';
-    height: 1px;
-    bottom: 0;
-    width: 90%;
-    background-color: rgb(190, 189, 189);
-    position: absolute;
+#location-card-icon{
+    transform: translatey(6px) translateX(-4px);
+    color: rgb(0, 0, 136);
 }
-.landscape-action-btn button{
+
+.country-img{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding-right: 20px;
+}
+.country-img img{
+    border-radius: 20px;
+    width: 180px;
+    height: 100px;
+    margin-bottom: 50px;
+}
+.country-img img:first-child{
+    /* display: none; */
+    width: 290px;
+    height: 200px;
+}
+.country-img img:last-child{
+    align-items: flex-end;
+}
+#statistics-section{
+    flex-wrap: wrap;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
+}
+.Vital-Statistics{
+    flex: 1;
+    background-color: white;
+    padding: 30px;
     border-radius: 30px;
+    max-width: 700px;
+}
+.Vital-Statistics-heading{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+.Vital-Statistics-heading p{
+    font-size: 25px;
     font-weight: 600;
-    font-size: 15px;
-    min-width: 20px;
-    max-width: 300px;
-    padding: 20px;
-    border: none;
-    cursor: pointer;
+}
+.Vital-Statistics-heading span{
+    color: rgb(110, 110, 255);
+}
+.Statistics{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+.Statistics-card p{
+    color: rgba(0, 0, 0, 0.582);
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.Statistics-card p:last-child{
+    font-size: 26px;
+    font-weight: 700;
+    color: black;
+}
+.Special-Context{
+    color: rgba(255, 255, 255, 0.918);
     background-color: blue;
+    border-radius: 30px;
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+}
+.Special-Context-heading{
+    font-size: 25px;
+    margin-bottom: 30px;
+
+}
+.Special-Context-parent{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+.Special-Context-child{
+    color: #ffffffc0;
+    font-size: 13px;
+    line-height: 1.3;
+}
+.Special-Context-child p:last-child{
     color: white;
+    font-size: 1.3rem;
 }
-#comparebtn{
-    background-color: hsl(240, 1%, 71%);
+.status-section{
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    gap: 25px;
+    margin-bottom: 90px;
 }
-.landscape-action{
+.status-section-parent{
+    min-width: 500px;
+    border-radius: 35px;
+    padding: 20px;
+    flex: 1;
+    height: 85px;
+    background-color: #d4d4d460;
+}
+.status-section-status{
+    font-size: 17px;
+    color: rgb(92, 92, 92);
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.status-section-child{
+    color: blue;
+    display: flex;
+    gap: 10px;
+}
+.status-section-child p{
+    color: black;
+    font-size: 23px;
+    font-weight: 600;
     flex: 1;
 }
-.landscape-action h5{
-    font-size: 25px;
+.status-section-child p:last-child{
     font-weight: 500;
-    margin-bottom: 10px;
+    font-size: 16px;
+    flex: 0;
 }
-.landscape-action p{
-    font-size: 1;
-    font-weight: 400;
+#public{
+    transform: translatey(6px);
 }
-.landfact{
-    display: flex;
-    justify-content: space-around;
-    padding: 30px;
-    align-items: center;
-    text-align: left;
-}
-.landfact-child{
-    padding: 10px;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    width: 130px;
-    height: 60px;
-    background-color:  hsla(240, 1%, 71%, 0.315);
-}
-.landfact-child-p{
-    font-size: 15px;
-    color: rgba(0, 0, 0, 0.829);
-}
-.capitalname{
-    margin-top: 5px;
-    color: black;
-    font-weight: 600;
-    font-size: 20px;
-}
-.details{
-    padding: 30px;
-    display: flex;
-    gap: 220px;
-    justify-content: space-evenly;
-    text-align: center;
-    position: relative;
-}
-.details::before{
-    content: '';
-    height: 1px;
-    bottom: 0;
-    width: 90%;
-    background-color: rgb(190, 189, 189);
-    position: absolute;
-}
-.currencies{
-    height: 100px;
-    background-color: transparent;
-    width: 180px;
-}
-.Languages{
-    height: 100px;
-    background-color: transparent;
-    width: 180px;
-}
-.detailsp{
-    font-weight: 400;
-    margin-bottom: 15px;
-    font-size: 20px;
-}
-.details2{
-    background-color: hsl(200, 68%, 85%);
-    padding: 7px 10px;
-    border-radius: 7px;
-    display: inline;
-}
-.Neighbors{
-    padding: 35px;
-}
-.Neighbors h5{
-    font-size: 19px;
-    font-weight: 500;
-}
-.Neighbor-card{
-    margin-top: 30px;
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    align-items: center;
-}
-.Neighbors-card{
-    display: inline;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 0, 0, 0.247);
-    padding: 10px 26px;
-    border-radius: 5px
-}
-
-.imain{
-    background-color: white;
-    max-width: 900px !important;
-    padding: 0;
-        border-radius: 25px 25px 0 0 ;
-
-}
-
-@media screen and (max-width:1346px){
-
-    body{
-        background-color: bisque;
-    }
-    .main{
-        display: flex !important;
-        gap: 30px;
-    }
-    .imain{
-        max-width: 1400px !important;
-    }
-    #main{
-        flex: 1;
-        background-color: rgb(51, 124, 189);
-        min-width: fit-content;
-        max-width: 1200px !important;
-
-    }
-    .landscape{
-        flex: 1;
-        /* width: 1200px ; */
-        min-width: none;
-        max-width: 1000px !important;
+@media screen and (max-width:845px){
+    .Statistics{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 40px;
+        margin-bottom: 50px;
     }
 }
