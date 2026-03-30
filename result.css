@@ -364,3 +364,27 @@ body{
         min-width: 200px;
     }
 }
+
+/* for loading state */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.card{
+    width: 100px;
+    height: 100px;
+    background-color: transparent;
+    border-radius: 50%;
+    position: relative;
+    z-index: 5;
+    border: 10px solid transparent;
+    border-top: 10px solid blue;
+    animation: spin  infinite 500ms linear;
+}
+@keyframes spin {
+    100%{
+        transform: rotate(360deg);
+    }
+}

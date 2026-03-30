@@ -13,6 +13,7 @@ function switchpage() {
 }
 
 const notfound = document.getElementById("notfound");
+const loading = document.getElementById("loading");
 const found = document.getElementById("found");
             found.style.display = "none";
 
@@ -55,6 +56,7 @@ let newcon = countrysearch;
                     return;
                 }
 
+                loading.style.display = "none";
                 found.style.display = "block";
                 return res.json()
             })
