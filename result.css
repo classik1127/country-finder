@@ -140,10 +140,6 @@ body{
 /* for mobile bio view */
 
 @media screen and (max-width:425px){
-
-    body{
-        background-color: transparent;
-    }
     .other-action button, .SuggestedActions button{
         width: fit-content;
         font-size: 16px;
@@ -215,7 +211,6 @@ body{
     margin-bottom: 50px;
 }
 .country-img img:first-child{
-    /* display: none; */
     width: 290px;
     height: 200px;
 }
@@ -335,10 +330,37 @@ body{
 #public{
     transform: translatey(6px);
 }
+/* tablet view */
 @media screen and (max-width:845px){
     .Statistics{
         grid-template-columns: 1fr 1fr;
         row-gap: 40px;
         margin-bottom: 50px;
+    }
+    .Special-Context{
+        max-width: 750px
+    }
+    .status-section-parent{
+        min-width: 300px;
+    }
+    .country-img img:first-child{
+    width: 200px;
+    height: 150px;
+    }
+    .country-img img{
+    width: 140px;
+    height: 80px;
+    }
+    
+}
+
+/* mobile view */
+@media screen and (max-width:421px){
+    .location-card, .country-img{
+        display: flex;
+        flex-direction: column;
+    }
+    .status-section-parent{
+        min-width: 200px;
     }
 }
