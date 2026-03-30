@@ -251,13 +251,13 @@ body{
 }
 .Statistics-card p{
     color: rgba(0, 0, 0, 0.582);
-    font-size: 14px;
+    font-size: 11px;
     letter-spacing: 1px;
     font-weight: 500;
 }
 .Statistics-card p:last-child{
-    font-size: 26px;
-    font-weight: 700;
+    font-size: 21px;
+    font-weight: 600;
     color: black;
 }
 .Special-Context{
@@ -362,6 +362,19 @@ body{
     }
     .status-section-parent{
         min-width: 200px;
+    }
+    .top-section-bio h1{
+        font-size: 50px;
+    }
+    .Special-Context{
+        min-width: 200px;
+    }
+    .status-section-child p{
+        font-size: 19px;
+        font-weight: 500;
+    }
+    .status-section-parent{
+        height: 150px;
     }
 }
 
