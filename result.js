@@ -75,8 +75,8 @@ let newcon = countrysearch;
                 // maplink.href = maps.googleMaps;
                 capitalname.textContent = datainfo.capital;
                 startOfWeek.textContent = datainfo.startOfWeek;
-                Population.textContent = datainfo.population;
-                Area.textContent = datainfo.area;
+                Population.textContent = datainfo.population.toLocaleString();
+                Area.textContent = `${datainfo.area.toLocaleString()}km²`;
                 unMember.textContent = datainfo.unMember;
                 region.textContent = datainfo.subregion;
                 fifa.textContent = datainfo.fifa;
@@ -88,6 +88,7 @@ let newcon = countrysearch;
                 landlocked.textContent = datainfo.landlocked;
                 independent.textContent = datainfo.independent;
                 Timezone.textContent = datainfo.timezones[0];
+                
 
 
 
