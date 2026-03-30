@@ -14,7 +14,7 @@ function switchpage() {
 
 const notfound = document.getElementById("notfound");
 const found = document.getElementById("found");
-            found.style.display = "block";
+            found.style.display = "none";
 
 
 // for page with result
@@ -29,41 +29,64 @@ const stats = document.getElementById("stats");
 const Timezone = document.getElementById("Timezone");
 const Languages = document.getElementById("Languages");
 const Currencies = document.getElementById("Currencies");
+const symbol = document.getElementById("symbol");
 const Neighborone = document.getElementById("Neighborone");
-const Neighbortwo = document.getElementById("Neighbortwo");
-const Neighborthree = document.getElementById("Neighborthree");
-const Neighborfour = document.getElementById("Neighborfour");
+const region = document.getElementById("region");
+const coatofarm = document.getElementById("coatofarm");
+const startOfWeek = document.getElementById("startOfWeek");
+const fifa = document.getElementById("fifa");
+const unMember = document.getElementById("unMember");
+const independent = document.getElementById("independent");
+
 
 const countryflag = document.getElementById("countryflag");
 
 
 console.log(countrysearch);
+
 let newcon = countrysearch;
     try {
          fetch(`https://restcountries.com/v3.1/name/${newcon}`)
-            .then(Response => Response.json())
+            .then(res => {
+                if (!res.ok) {
+                    console.log("fuck")
+                    found.style.display = "none";
+                    notfound.style.display = "block";
+                    return;
+                }
+
+                found.style.display = "block";
+                return res.json()
+            })
             .then(data  => {
                 let datainfo = data[0];
                 console.log(datainfo)
-                console.log(datainfo.status)
 
                 
-                                countryflag.alt  = datainfo.flags.alt ;
-                                
-                                countryflag.src  = datainfo.flags.svg ;
+                countryflag.alt  = datainfo.flags.alt ;
+                countryflag.src  = datainfo.flags.svg ;
+
+                coatofarm.src  = datainfo.coatOfArms.png ;
+
                 continet.textContent = datainfo.continents;
                 countryname.textContent = countrysearch;
                 // maplink.href = maps.googleMaps;
                 capitalname.textContent = datainfo.capital;
+                startOfWeek.textContent = datainfo.startOfWeek;
                 Population.textContent = datainfo.population;
                 Area.textContent = datainfo.area;
+                unMember.textContent = datainfo.unMember;
+                region.textContent = datainfo.subregion;
+                fifa.textContent = datainfo.fifa;
                 stats.textContent = datainfo.status;
+                Languages.textContent = Object.values(datainfo.languages)[0];
+                let currenciesobj = Object.values(datainfo.currencies)[0];
+                symbol.textContent = currenciesobj.symbol;
+                Currencies.textContent = currenciesobj.name;
+                landlocked.textContent = datainfo.landlocked;
+                independent.textContent = datainfo.independent;
                 Timezone.textContent = datainfo.timezones[0];
-                // Currencies.textContent = datainfo.Currencies.name;
-                Neighborone.textContent = datainfo.borders[0];
-                Neighbortwo.textContent = datainfo.borders[1];
-                Neighborthree.textContent = datainfo.borders[2];
-                Neighborfour.textContent = datainfo.borders[3];
+
 
 
             })
