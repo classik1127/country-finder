@@ -43,7 +43,6 @@ const independent = document.getElementById("independent");
 const countryflag = document.getElementById("countryflag");
 
 
-console.log(countrysearch);
 
 let newcon = countrysearch;
     try {
@@ -62,7 +61,6 @@ let newcon = countrysearch;
             })
             .then(data  => {
                 let datainfo = data[0];
-                console.log(datainfo)
 
                 
                 countryflag.alt  = datainfo.flags.alt ;
@@ -94,5 +92,4 @@ let newcon = countrysearch;
 
             })
     } catch (error) {
-        console.error()
     }
