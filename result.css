@@ -229,6 +229,12 @@ body{
     padding: 30px;
     border-radius: 30px;
     max-width: 700px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px 2px 6px 5px rgba(156, 156, 156, 0.377),
+                1px 2px 6px 5px rgba(156, 156, 156, 0.377);
+}
+.Vital-Statistics:hover{
+    transform: translateY(-5px);
 }
 .Vital-Statistics-heading{
     display: flex;
@@ -268,6 +274,12 @@ body{
     flex: 1;
     min-width: 300px;
     max-width: 400px;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 1px 2px 6px 5px rgba(156, 156, 156, 0.377),
+                1px 2px 6px 5px rgba(156, 156, 156, 0.377);
+}
+.Special-Context:hover{
+     transform: translateY(-5px);
 }
 .Special-Context-heading{
     font-size: 25px;
@@ -304,6 +316,9 @@ body{
     flex: 1;
     height: 85px;
     background-color: #d4d4d460;
+}
+.status-section-parent:hover{
+    background-color:  #d4d4d4;;
 }
 .status-section-status{
     font-size: 17px;
